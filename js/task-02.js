@@ -1,5 +1,4 @@
 const setEl = document.querySelector('#ingredients');
-
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -8,9 +7,9 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-for (let i = 0; i < ingredients.length; i += 1) {
+const allNewItemEl = ingredients.map(ingredient => {
   const setItemEl = document.createElement("li");
-  setItemEl.textContent = ingredients[i]
-  setItemEl.className = 'item'
+  setItemEl.textContent = [ingredient]
+  setItemEl.classList.add('item')
   setEl.append(setItemEl)
-};
+});
