@@ -14,7 +14,9 @@ const images = [
 ];
 
 const setEl = document.querySelector('.gallery');
-setEl.style = "display: flex; align-content: center; justify-content: space-evenly;";
+setEl.style.display = "flex";
+setEl.style.alignContent = "center";
+setEl.style.justifyContent = "space-evenly";
 const imgItemValue = ({ url, alt }) => {
   return `<li class="gallery-list">
         <img
